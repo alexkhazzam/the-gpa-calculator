@@ -24,7 +24,7 @@ class App {
         resetPage.getListItemsContent();
     }
 }
-
+//comment. I like apples
 const app = new App();
 const submitInfoBtn = document.querySelector(".calculate");
 submitInfoBtn.addEventListener("click", () => {
