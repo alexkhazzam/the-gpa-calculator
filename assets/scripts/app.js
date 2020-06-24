@@ -1,5 +1,5 @@
-import { HandleInputs } from "./Components/handlingInputs.js";
-import { HandlingCalculation } from "./Components/handlingCalculation.js";
+import { HandleInputs } from "./Components/HandlingInputs.js";
+import { HandlingCalculation } from "./Components/HandlingCalculation.js";
 import { AddRow } from "./app/DOMHelper.js";
 import { ResetPage } from "./App/ResetPage.js";
 import { ShowCalc } from "./App/ShowingCalculation.js";

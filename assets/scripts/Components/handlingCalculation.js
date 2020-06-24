@@ -1,4 +1,4 @@
-import { HandleInputs } from "./handlingInputs.js";
+import { HandleInputs } from "./HandlingInputs.js";
 
 export class HandlingCalculation extends HandleInputs {
   constructor() {
