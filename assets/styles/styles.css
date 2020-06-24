@@ -160,3 +160,7 @@ span {
 .point {
   margin-left: 80px;
 }
+
+button:focus {
+  outline: none;
+}
