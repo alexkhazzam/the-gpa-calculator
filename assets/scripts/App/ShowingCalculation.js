@@ -12,10 +12,11 @@ export class ShowCalc {
         return;
       } else {
         count++;
-        text += `${""} (${point.value}) + ${" "}`;
+        text += `${""} ${point.value} + ${""}`
       }
     });
-    let earned = text.slice(0, text.lastIndexOf("+")) + "/";
+    text = (text.slice(0, text.lastIndexOf("+")) + "");
+    let earned = `${"("}${text}${")"} ${"/"}`;
 
     let secondCount = 0;
     let maxText = "";
@@ -23,15 +24,16 @@ export class ShowCalc {
       if (point.value === "") {
         return;
       } else {
-        maxText += `${" "} (${point.value}) +`;
+        maxText += `${" "} ${point.value} +`
         secondCount++;
       }
     });
     if (count === 0 && secondCount === 0) {
       return;
     } else {
-      let maxed = maxText.slice(0, maxText.lastIndexOf("+")) + "";
-      calculations.textContent = `${earned} ${maxed} = ${finalGrade.value}`;
+      let maxed = (maxText.slice(0, maxText.lastIndexOf("+")) + "");
+      maxed = `${"("}${maxed}${")"}`;
+      calculations.textContent = (`${earned} ${maxed} = ${finalGrade.value}`);
     }
   }
 }
